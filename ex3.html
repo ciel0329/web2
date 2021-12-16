@@ -38,5 +38,16 @@
               The man then entered into home quarantine. He was tested again on December 12 -- a full 15 days after first arriving in China, with the result coming back positive in the early hours of December 13. Subsequent genome sequencing reviewed by the Chinese Center for Disease Control and Prevention confirmed it was <span class="js">the Omicron variant</span>, according to authorities.
               Unlike the Tianjin case, the man has been diagnosed as a confirmed case -- meaning he has symptoms. He is now being treated in isolation in hospital, officials said. Following his diagnosis, 10,544 people connected to the man have been tested for the virus -- so far all results have returned negative.
             </p>
-          </body>
+            <input type = "button" value="night" onclick="
+            if(this.value  === 'night'){
+               document.querySelector('body').style.backgroundColor = 'black';
+               document.querySelector('body').style.color = 'white';
+               this.value  = 'day';
+            } else {
+              document.querySelector('body').style.backgroundColor = 'white';
+              document.querySelector('body').style.color = 'black';
+              this.value  ='night';
+            }
+           ">
+     </body>
 </html>
