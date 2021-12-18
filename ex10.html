@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var sisters = {
+        "me":"chaelin",
+        "younger":"chaejin"
+      };
+      document.write("me: "+sisters.me+"<br>");
+      document.write("younger: "+sisters.younger+"<br>");
+      sisters.older = "chaewon";
+      document.write("older : "+sisters.older+"<br>");
+      sisters["friend"]="Jin";
+      document.write("friend : "+sisters.friend+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+      for(var key in sisters){
+          document.write(key+':'+sisters[key]+'<br>');
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+      sisters.showAll = function(){
+        for(var key in this){
+            document.write(key+':'+ this[key]+'<br>');
+      }
+      }
+      sisters.showAll();
+    </script>
+  </body>
+</html>
